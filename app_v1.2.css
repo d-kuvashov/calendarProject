@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2em;
+}
+/* Main */
+h1 {
+    text-align: center;
+}
+ul {
+    padding: 0%;
+    list-style: none;
+}
+li {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+/* Top */
+.CodeOfMeeting {
+    margin: 5px;
+}
+/* Middle */
+.ChoosingMonthToRender {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.SelectionOfPreviousMonth, .CurrentMonth, .SelectionOfNextMonth {
+    margin: 5px;
+}
+.Week {
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+.FirstMonthTable {
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+.SecondMonthTable {
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+.Workdays {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.Weekends {
+    color: #ECC49C;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.MiddlePartDiv {
+    margin-bottom: 120px;
+}
+/* Bottom */
+.ColorSelection {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.AdditionalActions, .SalutoryPart {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.BottomPartDiv {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.Negative {
+    text-align: right;
+}
+.Positive {
+    text-align: left;
+}
+.TextToHelp, .Negative, .Ambivalent, .Positive {
+    margin: 5px;
+}
+.ShowOtherDecisions, .SendDecision {
+    margin-top: 5px;
+}
+/* Modals */
+.ui.modal {
+    font-size: 1.2em;
+    display: grid;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "meeting meeting" "aim aim" "creator creator" "button button";
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    background: white;
+    width: 280px;
+    max-width: 100%;
+    height: 30vh;
+    min-height: 200px;
+    margin: auto;
+    border: 30px solid rgba(0,0,0,0.1);
+    background-clip: border-box;
+    background-clip: padding-box; 
+    background-clip: content-box;
+    border-radius:12px;
+    -moz-background-clip: padding; 
+}
+.HeaderOfModal {
+    grid-area: meeting;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.CodeValue, .AimValue, .NameValue {
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 5px;
+    border:1px solid black;
+}
+.CancelButton, .СreateButton, .ChangeButton, .ApproveButton {
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+label {
+    text-align: right;
+    padding-right:10px;
+}
+.JustText {
+    display: grid;
+    margin: 5px;
+    grid-area: aim;
+}
+.ChangeButton {
+    grid-area: creator;
+}
